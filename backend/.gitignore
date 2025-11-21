@@ -1,4 +1,8 @@
+# Environment variables
 .env
+.env.local
+.env.*.local
+
 # Logs
 logs
 *.log
@@ -8,18 +12,44 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
 
-# Editor directories and files
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Cache
+.cache/
+.nyc_output/
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional: PM2
+.pm2/
